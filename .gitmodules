@@ -1,3 +1,6 @@
 [submodule "MoonlightEngine/vendor/spdlog"]
 	path = MoonlightEngine/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "MoonlightEngine/vendor/GLFW"]
+	path = MoonlightEngine/vendor/GLFW
+	url = https://github.com/TheCherno/GLFW

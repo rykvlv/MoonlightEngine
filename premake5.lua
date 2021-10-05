@@ -11,6 +11,11 @@ workspace "MoonlightEngine"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "MoonlightEngine/vendor/GLFW/include"
+
+include "MoonlightEngine/vendor/GLFW"
+
 project "MoonlightEngine"
 	location "MoonlightEngine"
 	kind "SharedLib"
@@ -31,7 +36,14 @@ project "MoonlightEngine"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links 
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"
@@ -94,7 +106,7 @@ project "Sandbox"
 
 		defines 
 		{
-			"ML_PLATFORM_WINDOWS",
+			"ML_PLATFORM_WINDOWS"
 		}
 
 	filter "configurations:Debug"
