@@ -2,9 +2,6 @@
 
 #include "Moonlight/Core.h"
 
-#include <string>
-#include <functional>
-
 namespace ML {
 
 	enum class EventType

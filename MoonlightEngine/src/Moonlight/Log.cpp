@@ -1,3 +1,4 @@
+#include "mlpch.h"
 #include "Log.h"
 
 namespace ML {

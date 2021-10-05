@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace ML {
 	class MOONLIGHT_API KeyEvent : public Event {
 	public:

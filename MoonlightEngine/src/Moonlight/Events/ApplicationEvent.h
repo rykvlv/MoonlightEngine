@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace ML {
 
 	class MOONLIGHT_API WindowResizeEvent : public Event

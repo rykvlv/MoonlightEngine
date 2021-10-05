@@ -1,3 +1,4 @@
+#include "mlpch.h"
 #include "Application.h"
 
 #include "Events/ApplicationEvent.h"
@@ -15,12 +16,6 @@ namespace ML {
 	void Application::run() {
 		WindowResizeEvent e(1280, 768);
 		ML_TRACE(e);
-		if (e.isInCategory(EventCategoryApplication)) {
-			ML_TRACE(e);
-		}
-		if (e.isInCategory(EventCategoryInput)) {
-			ML_TRACE(e);
-		}
 		while (true) {
 
 		}
