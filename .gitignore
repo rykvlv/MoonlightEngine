@@ -1,0 +1,7 @@
+# Directories
+.vs/
+bin/
+
+# Files
+*.ini
+*.user
