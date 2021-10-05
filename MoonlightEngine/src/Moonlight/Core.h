@@ -1,5 +1,6 @@
 #pragma once
 
+
 #ifdef ML_PLATFORM_WINDOWS 
 	#ifdef ML_BUILD_DLL
 		#define MOONLIGHT_API __declspec(dllexport)

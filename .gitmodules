@@ -1,0 +1,3 @@
+[submodule "MoonlightEngine/vendor/spdlog"]
+	path = MoonlightEngine/vendor/spdlog
+	url = https://github.com/gabime/spdlog
