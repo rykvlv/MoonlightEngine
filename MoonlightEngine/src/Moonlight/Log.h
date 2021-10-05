@@ -5,6 +5,7 @@
 #include "Core.h"
 #include "spdlog/spdlog.h"
 #include "spdlog/sinks/stdout_color_sinks.h"
+#include "spdlog/fmt/ostr.h"
 
 namespace ML {
 	class MOONLIGHT_API Log {
